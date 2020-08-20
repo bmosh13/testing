@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html>
 <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
     body{
-        font-family: sans-serif;
-        background-color: lightgrey;
+        
+        font-family: 'poppins';
+        background-color: #f8f8ff;
         margin: 80px;
     }
     
-    h1{
+    .head{
         font-size: 60px;
-        background-color: darkslategray;
+        background-color: #333;
         border-radius: 10px;
         text-align:center;
         color: whitesmoke;
     }
+
+        .topnav{
+        background-color: #333;
+        overflow: hidden;
+    }
     
-    .header2{
-        font-size: 40px;
-        color: darkslategray;
+    .topnav a{
+
+        color: #F2F2F2;
         text-align: center;
-        background-color: whitesmoke;
-        border-radius: 10%;
-        padding: 20px 20px 20px 20px;
-        margin: 0px 100px 25px 100px;
-        background-width:33%;
+        padding: 16px 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    
+    .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .topnav a.active{
+        background-color: dimgrey;
+        color:white;
     }
     
     .parag{
         font-size: 20px;
-        color:darkslategray;
+        color:#f8f8ff;
         float: left;
         width:45%;
         text-align: justify;
         margin-top: 5px;
-        background-color: whitesmoke;
+        background-color: #333;
         border-radius: 10px;
         padding: 20px 20px 20px 20px;
     }
@@ -42,6 +57,7 @@
         float: right;
         width:45%;
         border-color: darkslategray;
+        border-style: solid;
         border-radius: 10%;
     }
     .clearfix{
@@ -55,27 +71,37 @@
 </style>
     
 <main>
+    <div class="topnav">
+    <a class="active" href="/home.html">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/contact.html">Contact</a>
+    <a href="https://github.com/bmosh13">Github</a>
+    <a href="https://www.linkedin.com/in/rob-mosher-1064731a4">LinkedIn</a>
+    <a href="mailto:ram487@cornell.edu">Facebook</a>
+    </div>
+    
     <div>
-    <h1>Rob Mosher</h1>
+    <h1 class="head">Rob Mosher</h1>
     <hr class="divline">    
     </div>
     <div class="clearfix"></div>
     
     <div>
         
-    <h3 class="header2" >About Me:</h2>
-
     <div class="clearfix"></div>
         
     <img src="https://media-exp1.licdn.com/dms/image/C4D03AQF24jidvwG13w/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=lrAOXiI12hvr2MDvo4AhIjXgdSpXUzcbF-1ojVyzbgk" alt="My Portrait" width=350px class="images">
     
    
-    
+    <div>
     <p class="parag">Hello, and thank you for visiting my webpage! I am an admitted student at Cornell University, with interests in physics, chemistry, mathematics, optimization, and engineering. I eventually hope to become an Electrical and Computer Engineering major. I am originally from Weston, Massachusetts.</p>
-    
+    </div>
+    <div>
     <p class="parag">In high school, I participated in a variety of activities on top of a rigorous courseload. I was a <strong>two-term president</strong> of my Rotary Interact Club chapter, <strong>Treasurer</strong> of my National Honor Society chapter, <Strong>Captain and All-State qualifier</Strong> in both Cross Country and Track, and <strong>Officer</strong> in the Wind Ensemble. </p>
-    
+    </div>
+    <div class="clearfix">
     <p class="parag">I am a computer hobbyist, and I enjoy spending time on projects involving hardware and software alike. I have a working knowledge of Arduino and Raspberry Pi, as well as experience with <strong>Java, Python, C, HTML, JavaScript, and more.</strong> Click <a href="#">here</a> to see my current projects!</p>
+    </div>
     </div>
 </main>
 
